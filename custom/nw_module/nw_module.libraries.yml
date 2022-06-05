@@ -1,0 +1,7 @@
+nw_module-js:
+  version: 1.0
+  js:
+    js/nw_module.validate.js: {external: true,attributes:{defer:true,aynsc:true}}
+  
+  dependencies:
+    - core/jquery

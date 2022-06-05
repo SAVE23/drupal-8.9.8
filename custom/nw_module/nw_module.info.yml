@@ -1,0 +1,5 @@
+type: module
+name: nw_module
+description: 'NW Module for testing'
+package: Custom
+core: 8.x

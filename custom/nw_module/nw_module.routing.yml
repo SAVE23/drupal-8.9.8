@@ -1,0 +1,9 @@
+nw_module.autotest:
+  path: '/nw/nw-module-controller'
+  defaults:
+    _controller: '\Drupal\nw_module\Controller\NwModuleController::module_info'
+    _title: 'Nw Module Controller Example'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'

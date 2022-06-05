@@ -1,0 +1,22 @@
+<?php
+ 
+use \Drupal\Core\Form\FormStateInterface;
+use \Drupal\nw_module\Controller\NwModuleController;
+
+function nw_module_form_alter(&$form, $form_state, $form_id)
+{
+    //dpm();
+    getControllerData();
+    if ($form_id == 'node_raccess_form') {
+        $form['#attached']['library'][] = 'nw_module/nw_module-js';
+    }
+}
+
+function getControllerData(){
+    // $nw_service = \Drupal::service('nw_module_info')->info_data();
+    $data = new NwModuleController();
+    $module_info = $data->module_info();
+    // $service_info = $nw_service;
+    // dpm ($service_info);
+    return $module_info;
+}

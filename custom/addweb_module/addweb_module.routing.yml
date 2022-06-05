@@ -1,0 +1,17 @@
+addweb_module.getdata:
+  path: '/admin/config/addweb_module'
+  defaults:
+    _form: '\Drupal\addweb_module\Form\TextManipulateForm'
+    _title: 'addweb_module configuration screen'
+  requirements:
+    _permission: 'access content'
+
+addweb_module.slugshow:
+  path: '/blog/{slug}' # slug is a dynamic paramer 
+  defaults:
+    _controller: '\Drupal\addweb_module\Controller\SlugController::slugshow'
+    _title: 'Shows Slug'
+  requirements:
+    _permission: 'access content'
+    #slug: '\d+'
+    #slug: en|fr

@@ -1,0 +1,27 @@
+<?php
+
+use \Drupal\Core\Form\FormStateInterface;
+
+function specbee_theme() 
+{
+    $service = \Drupal::service('specbee.timezone');
+     $timezone_service = $service->getTimezone(); 
+
+    return [
+        'time_zone' => [
+          'variables' => [
+            'data' => '',
+          ],
+        ],
+    ];
+    
+}
+
+function mytheme_preprocess_block(&$vars) {
+    if($vars['derivative_plugin_id'] == 'time_zone') {
+      $vars['#cache']['max-age'] = 0;
+    }
+}
+
+
+?>

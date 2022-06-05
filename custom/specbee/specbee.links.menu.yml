@@ -1,0 +1,6 @@
+specbee.admin_settings_form:  
+  title: 'Location configuration'  
+  route_name: specbee.admin_settings_form  
+  description: 'Location Config admin'  
+  parent: system.admin_config_system  
+  weight: 99

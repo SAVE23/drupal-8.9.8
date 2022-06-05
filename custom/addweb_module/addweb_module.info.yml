@@ -1,0 +1,5 @@
+type: module
+name: addweb_module
+description: 'Add Web Module for task'
+package: Custom
+core: 8.x

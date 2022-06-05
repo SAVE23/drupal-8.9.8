@@ -1,0 +1,4 @@
+services:
+  specbee.timezone:
+    class: Drupal\specbee\Services\SpecbeeService
+    #arguments: ['@specbee_info']
