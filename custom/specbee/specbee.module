@@ -17,7 +17,7 @@ function specbee_theme()
     
 }
 
-function mytheme_preprocess_block(&$vars) {
+function specbee_preprocess_block(&$vars) {
     if($vars['derivative_plugin_id'] == 'time_zone') {
       $vars['#cache']['max-age'] = 0;
     }
