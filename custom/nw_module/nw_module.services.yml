@@ -1,4 +1,0 @@
-services:
-  nw_module.api:
-    class: Drupal\nw_module\Services\NwModuleService
-    arguments: ['@nw_module_info']
